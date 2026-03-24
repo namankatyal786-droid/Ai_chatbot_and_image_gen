@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-gemini-blue: #1a73e8;
+  --color-gemini-bg: #f8f9fa;
+  --color-gemini-dark-bg: #131314;
+  --color-gemini-card: #ffffff;
+  --color-gemini-dark-card: #1e1f20;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply backdrop-blur-md bg-white/70 dark:bg-black/70 border border-white/20 dark:border-white/10;
+}
+
+.message-bubble-user {
+  @apply bg-blue-600 text-white rounded-2xl rounded-tr-none px-4 py-2 max-w-[80%];
+}
+
+.message-bubble-ai {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-2xl rounded-tl-none px-4 py-2 max-w-[80%];
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Gemini-Style AI Hub",
+  "description": "A modern AI application featuring chat via OpenRouter and image generation via Hugging Face, with a clean Gemini-inspired UI.",
+  "requestFramePermissions": []
+}
